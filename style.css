@@ -1,0 +1,40 @@
+.navbar {
+    background-color: rgba(141, 118, 82, 0.5);
+}
+
+.nav__logo {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+}
+
+.nav__title {
+    color: #944040;
+    font-family: 'Bitter', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
+    text-align: center;
+    position: absolute;
+    left: 26.88%;
+    right: 5.62%;
+    top: 4.81%;
+    bottom: 56.73%;
+}
+
+.span__title {
+    color: #EACC32;
+}
+
+.navbar-toggler {
+    border-color: rgba(141, 118, 82, 0.5);
+    position: absolute;
+    left: 80.31%;
+    right: 6.88%;
+    top: 48.08%;
+    bottom: 12.5%;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
