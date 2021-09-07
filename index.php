@@ -17,7 +17,7 @@
             <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <img class="nav__logo" src="visuels/logo.png" alt="Logo">
+            <a href="#"><img class="nav__logo" src="visuels/logo.png" alt="Logo"></a>
             <h1 class="nav__title">Un combat, <span class="span__title">un sourire</h1>
             <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
             <ul class="navbar-nav">
@@ -41,11 +41,12 @@
         </nav>
     </header>
     <main>
-        <img src="#" alt="Image principale" class="main_img">
-        <input type="button" value="Faire un Don pour l'association" class="main_button">
+        <img src="visuels/main-image.jpg" alt="Image principale" class="main_img">
+        <a class="main_link" href="#">Faire un don pour l'association</a>
     </main>
     <section class="section_1">
-        <h2 class="section_titre">Notre Combat</h2>
+    <hr class="main_section">
+        <h2 class="section_title">Notre Combat : </h2>
         <p class="section_paragraphe">L'association vient en aide aux familles et surtout aux enfants atteints de cancers
            pédiatriques.
            Chaque année, 1750 nouveaux cas de cancers sont recensés chez les enfants.
@@ -53,33 +54,31 @@
            Pour cela nous organisons des collectes afin de financer les frais médicaux,
            d'améliorer les conditions de vies ou d'hospitalisation.
         </p>
-        <input type="button" value="En savoir plus" class="button_ensavoirplus">
+        <a class="section_link link" href="#">En savoir plus</a>
     </section>
     <aside>
-        <img src="#" alt="Evénement" class="image_événement">
-        <input type="button" value="Prochain événement" class="button_prochainevenement">
+        <img src="visuels/aside-image.jpg" alt="Evénement" class="aside_image">
+        <a class="aside_link link" href="#">Prochain événement</a>
     </aside>
     <footer>
-        <ul>
-            <li class="footer_item">
+    <hr class="aside_footer">
+        <ul class="footer_menu">
+            <li class="footer_item item-contact">
                 <a href="">Contact</a>
             </li>
-            <li class="footer_item">
+            <li class="footer_item item-mentions">
                 <a href="">Mentions Légales</a>
             </li>
-            <li class="footer_item">
+            <li class="footer_item item-apropos">
                 <a href="">A propos</a>
             </li>
         </ul>
-        <div>
-            <a href="#" class="incon_facebook"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="icon_twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="icon_instagram"><i class="fab fa-instagram"></i></a>
-
+        <div class="reseaux">
+            <a href="#" class="icon icon_facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="icon icon_twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="icon icon_instagram"><i class="fab fa-instagram"></i></a>
         </div>
-        <span class="footer_logo">
-            <img src="#" alt="Logo">
-        </span>
+        <a href="#"><img src="visuels/logo.png" alt="Logo" class="footer_logo"></a>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

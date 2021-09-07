@@ -1,12 +1,33 @@
+/* Style CSS du header */
+
 .navbar {
-    background-color: rgba(141, 118, 82, 0.5);
+    background-color: rgba(141, 118, 82, 0.7);
+    z-index: 1;
 }
+
+/* CSS du bouton menu mobile */
+
+.navbar-toggler {
+    border-color: rgba(141, 118, 82, 0.5);
+    position: absolute;
+    left: 80.31%;
+    right: 6.88%;
+    top: 48.08%;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* CSS du logo */
 
 .nav__logo {
     width: 5rem;
     height: 5rem;
     border-radius: 100%;
 }
+
+/* CSS du titre - Slogan */
 
 .nav__title {
     color: #944040;
@@ -26,21 +47,307 @@
     color: #EACC32;
 }
 
-.navbar-toggler {
-    border-color: rgba(141, 118, 82, 0.5);
-    position: absolute;
-    left: 80.31%;
-    right: 6.88%;
-    top: 48.08%;
-    bottom: 12.5%;
-}
-
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
+/* CSS lien de navigation du menu */
 
 .nav-link {
     color: white;
     text-align: center;
-    font-size: 1.2rem;
+    font-family: Bitter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 29px;
+}
+
+.nav-link:hover {
+    color: black;
+}
+
+.nav-link:focus {
+    color: #944040;
+}
+
+/* CSS du contenu principal */
+
+.main_img {
+    position: absolute;
+    height: 7.5rem;
+    width: 17.741rem;
+    left: 1.572rem;
+    right: 0.688rem;
+    top: 8.188rem;
+}
+
+.main_link{
+    position: absolute;
+    width: 9.671rem;
+    height: 5.063rem;
+    left: 0.625rem;
+    top: 9.2rem;
+
+    background: rgba(141, 118, 82, 0.3);
+    border: 1px solid #8D7652;
+    box-sizing: border-box;
+    border-radius: 0px 5px 5px 0px;
+
+    font-family: EB Garamond;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.main_link:hover {
+    background: rgba(141, 118, 82, 0.7);
+    text-decoration: none;
+    color: white;
+}
+
+/* CSS de la section 1 */
+
+.section_1 {
+    width: 20.438rem;
+    height: 9.938rem;
+    position: absolute;
+    left: 0rem;
+    right: 0rem;
+    top: 17.5rem;
+
+    background: rgba(234, 204, 50, 0.12);
+}
+
+.main_section {
+    position: absolute;
+    height: 0rem;
+    left: 3.188rem;
+    right: 2.688rem;
+    top: 0rem;
+    margin-top: -0.85rem;
+
+    border: 1px solid #944040;
+    box-sizing: border-box;
+}
+
+.section_title {
+    position: absolute;
+    width: 11.875rem;
+    height: 1.688rem;
+    left: calc(50% - 11.875rem/2);
+    top: 0.1rem;
+
+    font-family: EB Garamond;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.688rem;
+    line-height: 2.188rem;
+    /*display: flex;*/
+    align-items: center;
+    text-align: center;
+    color: #CD8923;
+}
+
+.section_paragraphe {
+    position: absolute;
+    width: 19.188rem;
+    height: 7rem;
+    left: 0.438rem;
+    top: 2rem;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.75rem;
+    line-height: 0.875rem;
+    display: flex;
+    align-items: center;
+
+    color: #8D7652;
+}
+
+.section_link {
+    position: absolute;
+    width: 7.688rem;
+    height: 2.063rem;
+    left: 6.125rem;
+    top: 8.5rem;
+    bottom: 24.24%;
+    background: #944040;
+    border-radius: 0px 5px 5px 0px;
+
+    font-family: EB Garamond;
+    font-style: normal;
+    font-weight: 500;
+    align-items: center;
+    text-align: center;
+    color: #CD8923;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-sizing: border-box;
+}
+
+.link:hover {
+    background: #EACC32;
+    color: #8D7652;
+    text-decoration: none;
+}
+
+/* CSS de l'aside */
+
+aside {
+    position: absolute;
+    width: 20rem;
+    height: 8.438rem;
+    left: 0px;
+    top: 29rem;
+}
+
+.aside_image {
+    position: absolute;
+    height: 7.5rem;
+    width: 100%;
+    left: 0px;
+    right: 0px;
+    bottom: 10%;
+}
+
+.aside_link {
+    position: absolute;
+    width: 11.75rem;
+    height: 1.875rem;
+    left: calc(50% - 188px/2 + 1px);
+    bottom: 0px;
+    background: #944040;
+    border-radius: 0px 5px 5px 0px;
+
+    font-family: EB Garamond;
+    font-style: normal;
+    font-weight: 500;
+    align-items: center;
+    text-align: center;
+    color: #CD8923;
+
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-sizing: border-box;
+}
+
+/* CSS du footer */
+
+footer {
+    position: absolute;
+    width: 20.438rem;
+    height: 8.031rem;
+    left: 0px;
+    top: 39.156rem;
+}
+
+.aside_footer {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    margin-top: 0%;
+
+    border: 1px solid #944040;
+    box-sizing: border-box;
+}
+
+ul > li > a {
+    display: flex;
+    list-style: none;
+
+    color: #8D7652;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 0.875rem;
+}
+
+.footer_menu > li > a:hover {
+    color: #944040;
+    text-decoration: none;
+}
+
+.item-contact {
+    position: absolute;
+    left: 15.29%;
+    right: 71.56%;
+    top: 10.51%;
+    bottom: 78.6%;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.item-mentions {
+    position: absolute;
+    left: 33.33%;
+    right: 37.31%;
+    top: 10.51%;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.item-apropos {
+    position: absolute;
+    left: 67.58%;
+    right: 17.43%;
+    top: 10.51%;
+    bottom: 78.6%;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.reseaux {
+    width: 7rem;
+    height: 1.875rem;
+    position: absolute;
+    left: 13.76%;
+    right: 51.99%;
+    top: 53.31%;
+    bottom: 23.35%;
+}
+
+.icon_facebook {
+    position: absolute;
+    left: 7%;
+    right: 70%;
+}
+
+.icon_twitter {
+    position: absolute;
+    left: 43%;
+    right: 64.53%;
+}
+
+.icon_instagram {
+    position: absolute;
+    left: 80%;
+    right: 0%;
+}
+
+.fab {
+    font-size: 25px;
+    color: rgba(234, 204, 50, 1);
+}
+
+.fab:hover {
+    color: #944040;
+}
+
+.footer_logo {
+    width: 6rem;
+    height: 5.688rem;
+    position: absolute;
+    left: 62.69%;
+    right: 7.95%;
+    top: 25%;
+    bottom: 0%;
 }
