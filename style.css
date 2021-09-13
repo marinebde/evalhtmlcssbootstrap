@@ -1,3 +1,5 @@
+
+
 /* Style CSS du header */
 
 .navbar {
@@ -6,21 +8,25 @@
 }
 
 /* CSS du bouton menu mobile */
-
 .navbar-toggler {
     border-color: rgba(141, 118, 82, 0.5);
     position: absolute;
     left: 80.31%;
     right: 6.88%;
     top: 48.08%;
+
+}
+
+.navbar-toggler:active {
+    color: black;
 }
 
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-/* CSS du logo */
 
+/* CSS du logo */
 .nav__logo {
     width: 5rem;
     height: 5rem;
@@ -28,7 +34,6 @@
 }
 
 /* CSS du titre - Slogan */
-
 .nav__title {
     color: #944040;
     font-family: 'Bitter', serif;
@@ -45,6 +50,40 @@
 
 .span__title {
     color: #EACC32;
+}
+
+@media screen and (min-width: 500px) {
+    h1.nav__title {
+        font-size: 1.6rem;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 985px) {
+    .navbar {
+        height: 6rem;
+    }
+
+    h1.nav__title {
+        text-align: left;
+        left: 3%;
+        top: 15%;
+    }
+
+    .nav__logo {
+        width: 10rem;
+        height: 10rem;
+        position: absolute;
+        left: 45%;
+        top: 10%;
+    }
+
+    .collapse {
+        position: absolute;
+        top: 6%;
+        right: 1%;
+    }
+
 }
 
 /* CSS lien de navigation du menu */
@@ -67,25 +106,42 @@
     color: #944040;
 }
 
-/* CSS du contenu principal */
+@media screen and (min-width: 985px) {
+    .nav-link {
+        color: #944040;
+        font-size: 1.05rem;
+    }
 
-.main_img {
-    position: absolute;
-    height: 7.5rem;
-    width: 17.741rem;
-    left: 1.572rem;
-    right: 0.688rem;
-    top: 8.188rem;
+    .nav-link:focus {
+        color: white;
+    }
 }
 
-.main_link{
+/* CSS du contenu principal */
+
+main {
+    position: relative;
+}
+
+.main__img {
+    max-width: 100%;
+    height: auto;
+    padding-top: 27px;
+    padding-left: 25px;
+    padding-right: 11px;
+}
+
+ .main__link {
     position: absolute;
-    width: 9.671rem;
-    height: 5.063rem;
-    left: 0.625rem;
-    top: 9.2rem;
+    left: 11px;
+    top: 50px;
+    width: 175px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
 
     background: rgba(141, 118, 82, 0.3);
+    filter: drop-shadow(6px 3px 2px rgba(0, 0, 0, 0.34));
     border: 1px solid #8D7652;
     box-sizing: border-box;
     border-radius: 0px 5px 5px 0px;
@@ -95,95 +151,117 @@
     font-weight: bold;
     font-size: 1.25rem;
     line-height: 1.625rem;
-    display: flex;
-    align-items: center;
-    text-align: center;
     color: white;
-}
+    display: flex;
+    text-align: center;
+    word-wrap: break-word;
+    flex-direction: column;
+    justify-content: center;
 
-.main_link:hover {
+ }
+
+ .main__link:hover {
     background: rgba(141, 118, 82, 0.7);
     text-decoration: none;
     color: white;
 }
 
-/* CSS de la section 1 */
-
-.section_1 {
-    width: 20.438rem;
-    height: 9.938rem;
-    position: absolute;
-    left: 0rem;
-    right: 0rem;
-    top: 17.5rem;
-
-    background: rgba(234, 204, 50, 0.12);
-}
-
-.main_section {
-    position: absolute;
-    height: 0rem;
-    left: 3.188rem;
-    right: 2.688rem;
-    top: 0rem;
-    margin-top: -0.85rem;
-
+.main__section {
+    width: 80%;
     border: 1px solid #944040;
     box-sizing: border-box;
 }
 
-.section_title {
-    position: absolute;
-    width: 11.875rem;
-    height: 1.688rem;
-    left: calc(50% - 11.875rem/2);
-    top: 0.1rem;
+ @media screen and (min-width: 500px) {
+    .main__link {
+        top: 100px;
+        width: 300px;
+        height: 130px;
+        font-size: 2.5rem;
+        line-height: 3.4rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+        .main__img {
+            display: block;
+            margin: auto;
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    @media screen and (min-width: 1000px) {
+        .main__link {
+            top: 110px;
+            left: 100px;
+            height: 200px;
+            width: 400px;
+            font-size: 3rem;
+            line-height: 3.8rem;
+        }
+    }
+/* CSS de la section 1 */
+
+
+
+.section-1 {
+    width: 90%;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+
+    background: rgba(234, 204, 50, 0.12);
+}
+
+.section__title {
+    width: 100%;
+    margin: 0 auto;
 
     font-family: EB Garamond;
     font-style: normal;
     font-weight: 500;
     font-size: 1.688rem;
     line-height: 2.188rem;
-    /*display: flex;*/
-    align-items: center;
     text-align: center;
     color: #CD8923;
 }
 
-.section_paragraphe {
-    position: absolute;
-    width: 19.188rem;
-    height: 7rem;
-    left: 0.438rem;
-    top: 2rem;
+.section__paragraphe {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 8px;
+    padding-bottom: 35px;
+    
 
     font-family: Roboto;
     font-style: normal;
     font-weight: 300;
-    font-size: 0.75rem;
-    line-height: 0.875rem;
-    display: flex;
-    align-items: center;
-
+    font-size: 0.85rem;
+    line-height: 1rem;
+    text-align: center;
     color: #8D7652;
 }
 
-.section_link {
+.section__link {
     position: absolute;
-    width: 7.688rem;
+    display: flex;
+    width: 7.813rem;
     height: 2.063rem;
-    left: 6.125rem;
-    top: 8.5rem;
-    bottom: 24.24%;
+    bottom: -10px;
+    left: calc(50% - 125px/2 + 1px);
     background: #944040;
     border-radius: 0px 5px 5px 0px;
 
     font-family: EB Garamond;
     font-style: normal;
     font-weight: 500;
+    font-size: 1rem;
     align-items: center;
-    text-align: center;
+    justify-content: center;
     color: #CD8923;
+
     border: 1px solid rgba(255, 255, 255, 0.4);
     box-sizing: border-box;
 }
@@ -194,38 +272,56 @@
     text-decoration: none;
 }
 
+@media screen and (min-width: 800px) {
+    .section__title {
+        font-size: 3rem;
+        padding-top: 10px;
+    }
+
+    .section__paragraphe {
+        font-size: 1.1rem;
+        line-height: 1.4rem;
+        padding-top: 20px;
+    }
+
+    .section__link {
+        width: 12.5rem;
+        height: 2.2rem;
+        font-size: 1.4rem;
+        left: calc(50% - 200px/2 + 1px);
+    }
+}
+
 /* CSS de l'aside */
 
 aside {
-    position: absolute;
-    width: 20rem;
-    height: 8.438rem;
-    left: 0px;
-    top: 29rem;
-}
-
-.aside_image {
-    position: absolute;
-    height: 7.5rem;
     width: 100%;
-    left: 0px;
-    right: 0px;
-    bottom: 10%;
+    height: auto;
+    position: relative;
 }
 
-.aside_link {
+.aside__image {
+    height: auto;
+    width: 100%;
+    padding-top: 30px;
+}
+
+.aside__link {
     position: absolute;
+    display: flex;
     width: 11.75rem;
-    height: 1.875rem;
+    height: 2.063rem;
+    bottom: -10px;
     left: calc(50% - 188px/2 + 1px);
-    bottom: 0px;
     background: #944040;
     border-radius: 0px 5px 5px 0px;
 
     font-family: EB Garamond;
     font-style: normal;
     font-weight: 500;
+    font-size: 1rem;
     align-items: center;
+    justify-content: center;
     text-align: center;
     color: #CD8923;
 
@@ -233,108 +329,77 @@ aside {
     box-sizing: border-box;
 }
 
+@media screen and (min-width: 800px) {
+    .aside__image {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .aside__link {
+        width: 14rem;
+        height: 3rem;
+        font-size: 1.4rem;
+        left: calc(50% - 200px/2 + 1px);
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .aside__image {
+        display: block;
+        margin: 0 auto;
+        width: 60%;
+    }
+}
+
 /* CSS du footer */
 
 footer {
-    position: absolute;
-    width: 20.438rem;
-    height: 8.031rem;
-    left: 0px;
-    top: 39.156rem;
+    position: relative;
 }
 
-.aside_footer {
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    margin-top: 0%;
-
+.aside__footer {
+    margin-top: 25px;
+    width: 80%;
     border: 1px solid #944040;
     box-sizing: border-box;
 }
 
-ul > li > a {
+.footer__menu {
     display: flex;
     list-style: none;
+    justify-content: center;
+    padding: 0;
+    align-items: center;
+}
 
+.footer__item > a {
+    padding: 10px;
     color: #8D7652;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     font-size: 0.75rem;
-    line-height: 0.875rem;
 }
 
-.footer_menu > li > a:hover {
+.footer__menu :hover {
     color: #944040;
     text-decoration: none;
 }
 
-.item-contact {
-    position: absolute;
-    left: 15.29%;
-    right: 71.56%;
-    top: 10.51%;
-    bottom: 78.6%;
-
+.footer__reseaux-logo {
+    width: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
-    text-align: center;
 }
 
-.item-mentions {
-    position: absolute;
-    left: 33.33%;
-    right: 37.31%;
-    top: 10.51%;
-
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
-
-.item-apropos {
-    position: absolute;
-    left: 67.58%;
-    right: 17.43%;
-    top: 10.51%;
-    bottom: 78.6%;
-
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
-
-.reseaux {
-    width: 7rem;
-    height: 1.875rem;
-    position: absolute;
-    left: 13.76%;
-    right: 51.99%;
-    top: 53.31%;
-    bottom: 23.35%;
-}
-
-.icon_facebook {
-    position: absolute;
-    left: 7%;
-    right: 70%;
-}
-
-.icon_twitter {
-    position: absolute;
-    left: 43%;
-    right: 64.53%;
-}
-
-.icon_instagram {
-    position: absolute;
-    left: 80%;
-    right: 0%;
+.icon {
+    padding: 8px;
 }
 
 .fab {
-    font-size: 25px;
+    font-size: 32px;
     color: rgba(234, 204, 50, 1);
 }
 
@@ -342,12 +407,64 @@ ul > li > a {
     color: #944040;
 }
 
-.footer_logo {
-    width: 6rem;
-    height: 5.688rem;
-    position: absolute;
-    left: 62.69%;
-    right: 7.95%;
-    top: 25%;
-    bottom: 0%;
+.footer__logo {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 100%;
+}
+
+@media screen and (min-width: 500px) {
+    .footer__item > a {
+        font-size: 0.9rem;
+    }
+
+    .icon {
+        padding: 10px;
+    }
+
+    .fab {
+        font-size: 50px;
+    }
+
+    .footer__logo {
+        width: 12rem;
+        height: 12rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    .footer__menu {
+        padding-top: 15px;
+        position: absolute;
+        left: 35%;
+        z-index: 1;
+    }
+
+    .footer__item > a {
+        font-size: 1.2rem;
+    }
+
+    .footer__reseaux-logo {
+        justify-content: flex-start;
+        position: absolute;
+        top: 10%;
+        left: 5%;
+    }
+
+    .icon {
+        padding: 15px;
+    }
+
+    .fab {
+        font-size: 45px;
+    }
+
+    .footer__logo {
+        width: 13rem;
+        height: 13rem;
+        position: absolute;
+        right: 12%;
+        top: -65%;
+    }
 }
