@@ -12,34 +12,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;500&family=EB+Garamond:wght@500;700&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
 </head>
 <body>
-   <header>
-        <nav class="nav navbar navbar-expand-lg">
-            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a href="#"><img class="nav__logo" src="visuels/logo.png" alt="Logo"></a>
-            <h1 class="nav__title">Un combat, <span class="span__title">un sourire</h1>
-            <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
-                <ul class="navbar-nav">
-                    <li class="nav__item nav-item">
-                        <a class="nav-link" href="#">Accueil</a>
-                    </li>
-                    <li class="nav__item nav-item">
-                        <a class="nav-link" href="#">Dons</a>
-                    </li>
-                    <li class="nav__item nav-item">
-                        <a class="nav-link" href="#">Evénements</a>
-                    </li>
-                    <li class="nav__item nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                    <li class="nav__item nav-item">
-                        <a class="nav-link" href="#">A propos</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+
+    <?php
+
+    include 'header.php'; 
+
+    ?>
+
     <main>
         <img src="visuels/main-image.jpg"
              alt="Image principale" class="main__img">
@@ -59,28 +38,14 @@
     </section>
     <aside>
         <img src="visuels/aside-imagebis.jpg" alt="Evénement" class="aside__image">
-        <a class="aside__link link" href="#">Prochain événement</a>
+        <a class="aside__link link" href="evenements.php">Prochain événement</a>
     </aside>
-    <footer>
-    <hr class="aside__footer">
-        <ul class="footer__menu">
-            <li class="footer__item item-contact">
-                <a href="">Contact</a>
-            </li>
-            <li class="footer__item item-mentions">
-                <a href="">Mentions Légales</a>
-            </li>
-            <li class="footer__item item-apropos">
-                <a href="">A propos</a>
-            </li>
-        </ul>
-        <div class="footer__reseaux-logo">
-            <a href="#" class="icon icon__facebook"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="icon icon__twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="icon icon__instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#"><img src="visuels/logo.png" alt="Logo" class="footer__logo"></a>
-        </div>
-    </footer>
+
+    <?php
+
+    include 'footer.php';
+
+    ?>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

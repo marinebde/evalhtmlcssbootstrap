@@ -42,6 +42,7 @@
     font-size: 1.25rem;
     text-align: center;
     position: absolute;
+    height: 40px;
     left: 26.88%;
     right: 5.62%;
     top: 4.81%;
@@ -260,7 +261,7 @@ main {
     font-size: 1rem;
     align-items: center;
     justify-content: center;
-    color: #CD8923;
+    color: rgb(205, 137, 35);
 
     border: 1px solid rgba(255, 255, 255, 0.4);
     box-sizing: border-box;
@@ -399,7 +400,7 @@ footer {
 }
 
 .fab {
-    font-size: 32px;
+    font-size: 2rem;
     color: rgba(234, 204, 50, 1);
 }
 
@@ -423,7 +424,7 @@ footer {
     }
 
     .fab {
-        font-size: 50px;
+        font-size: 3.125rem;
     }
 
     .footer__logo {
@@ -457,7 +458,7 @@ footer {
     }
 
     .fab {
-        font-size: 45px;
+        font-size: 2.813rem;
     }
 
     .footer__logo {
@@ -466,5 +467,98 @@ footer {
         position: absolute;
         right: 12%;
         top: -65%;
+    }
+}
+
+/* Style de la page évènement */
+
+.main__evenement {
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
+}
+
+.section__evenement {
+    width: 80%;
+    height: auto;
+    margin: 0 auto 15px;
+    border: 1px solid #8D7652;
+    display: flex;
+    flex-direction: column;
+}
+
+.section__title-evenement {
+    color: #944040;
+    font-family: 'Bitter', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
+    text-align: center;
+    padding-top: 0.625rem;
+}
+
+.section__image-evenement {
+    height: 180px;
+    margin-top: 0.625rem;
+}
+
+.section__paragraphe-evenement {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color:#8D7652;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 500px) {
+
+    .section__title-evenement {
+        font-size: 1.563rem;
+    }
+
+    .section__image-evenement {
+        height: 17.5rem;
+    }
+
+    .section__paragraphe-evenement {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .section__image-evenement {
+        height: 23.75rem;
+        margin-left: 0.938rem;
+        margin-right: 0.938rem;
+    }
+} 
+
+@media screen and (min-width: 950px) {
+
+    .main__evenement {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 380px 380px;
+        margin-top: 5rem;
+    }
+
+    .section__1 {
+        background-color: rgba(205, 137, 35, 0.5);
+    }
+
+    .section__title-evenement {
+        height: 3.188rem;
+        margin-top: 0.313rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section__image-evenement {
+        height: 12.5rem;
+        margin-left: 0.313rem;
+        margin-right: 0.313rem;
     }
 }
